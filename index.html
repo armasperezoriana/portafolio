@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="img/LOGO.png" type="image/x-icon">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Perfil profesional</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero2.jpg" alt="">
+            </div>
+            <h1>ORIANA ARMAS</h1>
+            <h2>Ingeniera en Informática || Quality Assurance|| QA || Salesforce Marketing Cloud</h2>
+            <div class="redes">
+                <a href="https://github.com/armasperezoriana" target="_blank"><i class="fa-brands fa-github"></i></i></a>
+                <a href="https://wa.me//34655992776" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="www.linkedin.com/in/oriana-armas-14479a289" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.getonbrd.com/p/oriana-armas" target="_blank"><i class="fa-brands fa-get-pocket"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Oriana</span>
+                Profesional en QA con 3 años de experiencia en <span>testing manual y automatizado</span> con enfoque en resultados y en mejorar la experiencia del usuario final. Tengo sólida experiencia en aseguramiento de calidad, automatización de pruebas (Postman, JMeter, Cypress, Selenium, Cucumber, etc) y pruebas de rendimiento y funcionalidad, asegurando productos eficientes y confiables.<br>
+
+                En marketing digital, gestiono campañas de Email Marketing usando plataformas como <span>Salesforce Marketing Cloud</span>, Mailchimp y SendGrid. Domino HTML, CSS, JavaScript y AMPscript, lo que me permite personalizar y optimizar campañas que generan leads y refuerzan el reconocimiento de marca.
+                
+                Mi experiencia incluye alineación estratégica con ejecutivos, conocimientos en garantia de calidad y comercio electrónico, con el objetivo de innovar y aportar valor en cada proyecto.
+                  </p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            17-03-1998</strong>
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            ori17031998@gmail.com
+                        </li>
+                        <li>
+                            <strong>Git Hub</strong>
+                            https://github.com/armasperezoriana
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            28017, España, Madrid
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Quality Assurance</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                    
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJES</span>
+                        </div>
+                     
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                      
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <h3 class="cv-elias">Descarga CV</h3>
+            <button>
+                <a target="_blank" href="recurs/CV ORIANA ARMAS ESPANOL.pdf" download="CV_ELIAS_ARMAS_ESPAÑOL_front-qa-emailMarketing" class="hover-subrayado-descargar">
+                Español
+                 <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </a>
+            </button>
+            <button>
+            <a target="_blank" href="recurs/CV ORIANA ENGLISH.pdf" download="CV_ELIAS_ARMAS_ENGLISH_front-qa-emailMarketing" class="hover-subrayado-descargar">
+                English <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </a>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Salesforce Marketing Cloud</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Mailjet, Sendgrid y Microsoft Dynamics</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <div class="skill">
+                        <span>Selenium, Cypress,Postman</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Ilustraitor, Photoshop, Figma</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Scrum</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Experis</h4>
+                        <span class="casa">Experis</span>
+                        <span class="fecha">2024</span>
+                        <p>Actualmente cursando y preparandome para la certificación de Arquitecto en la Nube de AWS, para expecializarme más</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ingeniera en Informatica</h4>
+                        <span class="casa">Universidad de Andrés Eloy Blanco</span>
+                        <span class="fecha">2019 - 2022</span>
+                        <p>Ingenieria Tecnica y desarrolladora de aplicaciones</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                   
+                    <div class="item izq">
+                        <h4>Udemy</h4>
+                        <span class="casa">Udemy</span>
+                        <span class="fecha">2021- actualmente </span>
+                        <p>He completado cursos en Udemy relacionados a programación para tester, selenium con java y cucumber, Salesforce Marketing Cloud, Salesforce MarketinG Specialist</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Core Networks SL</h4>
+                        <span class="casa">Core Networks SL</span>
+                        <span class="fecha">2024</span>
+                        <p>Posicionamiento web para el emprendimiento</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+                    <div class="item izq">
+                        <h4>Aspacia</h4>
+                        <span class="casa">Grupo Aspacia</span>
+                        <span class="fecha">2024</span>
+                        <p>Auditoria Informatica</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+                    <div class="item izq">
+                        <h4>Técnico Superior Informatica</h4>
+                        <span class="casa">Universidad de Andrés Eloy Blanco</span>
+                        <span class="fecha">2018 - 2020</span>
+                        <p>Desarrolladora de aplicaciones </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                   
+                    
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencias laborales</h3>
+                  
+                    <div class="item der">
+                        <h4>Email Marketing</h4>
+                        <span class="casa">Meat code.cl - Santiago de Chile</span>
+                        <span class="fecha">2022-2024</span>
+                        <p>Planificación y Coordinación de Campañas de Email Marketing: Desarrollo y ejecución de campañas estratégicas de email marketing para impulsar el reconocimiento de marca y atraer nuevos leads de calidad.
+                            Gestión de Plataformas de Marketing de Correo Electrónico: Amplia experiencia en el envío masivo de correos a través de plataformas como Mailjet, SendGrid, Mailchimp y Salesforce Marketing Cloud, asegurando una entrega efectiva y segmentada.
+                            Optimización Técnica con HTML, CSS, JavaScript y AMPscript: Experto en el uso de tecnologías avanzadas en Salesforce Marketing Cloud, incluyendo HTML, CSS, JavaScript y AMPscript, para la creación de campañas interactivas y personalizadas.
+
+                            Análisis de Rendimiento de Campañas: Monitoreo y análisis semanal del rendimiento de las campañas, evaluando métricas clave para la optimización continua y asegurando el cumplimiento de los altos estándares de la empresa.
+                            Participación Activa en Reuniones Estratégicas: Colaboración proactiva en reuniones semanales con ejecutivos y equipos de marketing, aportando insights sobre el rendimiento de las campañas y sugiriendo mejoras estratégicas para futuros envíos.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>QA Analyst Automation/ Manual</h4>
+                        <span class="casa">Chicks Gold Inc.- Toronto, Ontario, Canadá · En remoto</span>
+                        <span class="fecha">2023-2024</span>
+                        <p>Desarrollo e Implementación de Estrategias de Pruebas Integrales: Diseño y ejecución de planes de prueba robustos para diversas plataformas de software, adaptando estrategias a las necesidades específicas del proyecto para maximizar la cobertura y minimizar los riesgos de producción.
+
+                            Automatización de Pruebas y Eficiencia Operativa: Desarrollo e implementación de scripts automatizados con herramientas líderes como Postman y JMeter, logrando una mayor velocidad y eficiencia en los ciclos de prueba y reduciendo significativamente el tiempo de entrega de cada iteración de software.
+                            
+                            Identificación y Documentación Precisa de Errores: Experiencia en la detección y documentación de bugs, comunicándolos de forma clara y detallada para una resolución rápida. Mi enfoque orientado a los detalles permite que cada fallo identificado sea resuelto eficazmente, contribuyendo a un producto final sólido y sin errores.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+
+                    <div class="item der">
+                        <h4>QA tester Manual </h4>
+                        <span class="casa">CHNC - Houston, Texas, Estados Unidos</span>
+                        <span class="fecha">2021-2022</span>
+                        <p>En este trabajo, me encargaba de realizar extensas pruebas manuales de diseño y funcionalidad, así como de programar y mejorar su funcionamiento.
+                            Plataformas y herramientas utilizadas: Wordpress, WIX, Shopify y Klaviyo
+                            Responsable de ejecutar las pruebas y revisiones diarias para garantizar la calidad de los sitios web, y encargada de ejecutar planes de pruebas para verificar el cumplimiento de los requisitos funcionales a nivel de usuario.
+                            Mejora de los planes de prueba y los casos de prueba. Diseño e implementación de nuevas funcionalidades que mejoren la experiencia de usuario.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="item der">
+                        <h4>
+                            Especialista en Marketing Digital y SEO/SEM </h4>
+                        <span class="casa">Cores Panama</span>
+                        <span class="fecha">2021</span>
+                        <p>Posicionamiento SEO avanzado: Desarrollo e implementación de estrategias de SEO, incluyendo auditorías técnicas y de contenido. Generación de recomendaciones para mejorar la visibilidad en motores de búsqueda y el rendimiento del sitio.
+                            Campañas SEM avanzadas: Creación, gestión y optimización de campañas PPC en Google Ads y otras plataformas. Análisis y ajuste de campañas para maximizar el retorno de inversión (ROI), con un enfoque en revisiones rápidas (3-4 horas) para redirigir el presupuesto hacia las campañas más efectivas.
+                            Redacción de contenidos optimizados: Producción de contenido atractivo y relevante, asegurando una correcta ortografía y alineación con las mejores prácticas SEO para mejorar el ranking y la relevancia del sitio.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Portafolio de proyectos</span>
+                        <span class="fecha">2022 - Actualmente</span>
+                        <p>Tengo experiencia en el desarrollo front-end con proyectos que utilizan bases de datos. Desde alrededor de 2019-2021, cree aplicaciones web y sitios utilizando HTML, CSS, JavaScript y bases de datos para almacenar y gestionar información, basado en 3 capas de seguridad encriptado simetrico y asimetrico, con notificaciones y demas. Esta experiencia me ha brindado sólidos conocimientos en la construcción de interfaces de usuario interactivas basadas en experiencia de usuario y en la manipulación de datos para soluciones eficientes y escalables.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+
+                    <div class="item der">
+                        <h4>Especialista en Soporte Técnico</h4>
+                        <span class="casa">SAREN</span>
+                        <span class="fecha">2019</span>
+                        <p>- Proveer soporte técnico a usuarios a través de múltiples canales, incluyendo teléfono, correo
+                            electrónico y chat.
+                            - Diagnosticar y resolver problemas de hardware, software y redes, tanto de forma remota.
+                            - Instalar, configurar y mantener sistemas informáticos y redes según las necesidades del cliente. 
+                            - Documentar y registrar todos los incidentes y soluciones proporcionadas para mantener un registro</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                 
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                28017, España. Madrid, Madrid.
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                               <div class="color-num"> +34 655992776 </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                ori17031998@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://github.com/armasperezoriana" target="_blank"><i class="fa-brands fa-github"></i></i></a>
+                <a href="https://wa.me//34655992776" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="www.linkedin.com/in/oriana-armas-14479a289" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.getonbrd.com/p/oriana-armas" target="_blank"><i class="fa-brands fa-get-pocket"></i></a>
+         
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
